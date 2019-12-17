@@ -1,4 +1,4 @@
-public class TextQuestion extends Question
+public class TextQuestion implements Question
 {
 	private String type;
 	private String question;
