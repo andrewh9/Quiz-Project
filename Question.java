@@ -1,4 +1,4 @@
-public abstract class Question implements Comparable<Question>
+public interface Question implements Comparable<Question>
 {
 	public Question(String type, String question, String answer)
 	{
