@@ -25,9 +25,4 @@ public class SMCQuestion extends Question
     {
         return answer;
     }
-
-    public boolean correctAnswer()
-    {
-        
-    }
 }
