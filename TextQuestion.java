@@ -1,4 +1,4 @@
-public class TextQuestion implements Question
+public class TextQuestion extends Question
 {
 	private String type;
 	private String question;
@@ -26,11 +26,5 @@ public class TextQuestion implements Question
 		return answer;
 	}
 	
-	public int compareTo(TextQuestion response)
-	{
-		if(type.equals(response.getAnswer()))
-			return 1;
-		else
-			return -1;
-	}
+	
 }
