@@ -1,0 +1,3 @@
+public MMCQuestion implements Question
+{
+}
