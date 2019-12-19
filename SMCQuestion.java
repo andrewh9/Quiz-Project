@@ -2,13 +2,13 @@ public class SMCQuestion extends Question
 {
     private String type;
     private String question;
-    private String answer;
+    private String answers[];
 
-    public SMCQuestion (String questionType, String theQuestion, String questionAnswer)
+    public SMCQuestion (String questionType, String theQuestion, String questionAnswers[])
     {
         type = questionType;
         question = theQuestion;
-        answer = questionAnswer;
+        answers = questionAnswer;
     }
 
     public String getType()
@@ -23,6 +23,9 @@ public class SMCQuestion extends Question
 
     public String getAnswer()
     {
-        return answer;
+       for(int i = 0; i < answers.length; i++)
+       {
+            System.out.println(answers[i]);
+       }
     }
 }
