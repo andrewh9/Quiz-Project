@@ -1,4 +1,4 @@
-public interface Question extends Comparable<Question> 
+public abstact class Question implements Comparable<Question> 
 {
     public abstract int compareTo();
 }
