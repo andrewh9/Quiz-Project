@@ -1,12 +1,12 @@
 import javax.swing.*;
 
-public class MCQuestion implements Question
+public class SMCQuestion implements Question
 {
     private String type;
     private String question;
     private String answer;
 
-    public MCQuestion (String questionType, String theQuestion, String questionAnswer)
+    public SMCQuestion (String questionType, String theQuestion, String questionAnswer)
     {
         type = questionType;
         question = theQuestion;
@@ -33,7 +33,7 @@ public class MCQuestion implements Question
         return 0;
     }
 
-    public int compareTo(MCQuestion response) {
+    public int compareTo(SMCQuestion response) {
         if(this.getAnswer().equals(response.getAnswer()))
         {
             return 1;
