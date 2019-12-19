@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class MCQuestion implements Question
 {
     private String type;
@@ -27,12 +29,23 @@ public class MCQuestion implements Question
     }
 
     @Override
-    public int compareTo(Question o) {
+    public int compareTo() {
         return 0;
     }
 
+    public int compareTo(MCQuestion response) {
+        if(this.getAnswer().equals(response.getAnswer()))
+        {
+            return 1;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
     @Override
-    public int compareTo() {
+    public int compareTo(Question o) {
         return 0;
     }
 }
