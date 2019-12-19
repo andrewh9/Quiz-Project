@@ -1,4 +1,4 @@
-public class SMCQuestion implements Question
+public class SMCQuestion extends Question
 {
     private String type;
     private String question;
@@ -26,24 +26,8 @@ public class SMCQuestion implements Question
         return answer;
     }
 
-    @Override
-    public int compareTo() {
-        return 0;
-    }
-
-    public int compareTo(SMCQuestion response) {
-        if(this.getAnswer().equals(response.getAnswer()))
-        {
-            return 1;
-        }
-        else
-        {
-            return -1;
-        }
-    }
-
-    @Override
-    public int compareTo(Question o) {
-        return 0;
+    public boolean correctAnswer()
+    {
+        
     }
 }
