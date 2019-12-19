@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class SMCQuestion implements Question
 {
     private String type;
