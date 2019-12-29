@@ -9,5 +9,20 @@ public class TextQuestion extends Question
 		type = questionType;
 		question = theQuestion;
 		answer = questionAnswer;
-	}	
+	}
+	
+	public String getType()
+    	{
+      		return type;
+    	}
+    
+    	public String getQuestion()
+    	{
+      		return question;
+    	}
+    
+    	public String getAnswer()
+    	{
+      		return answer;
+    	}
 }
