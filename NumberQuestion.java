@@ -10,5 +10,4 @@ public class NumberQuestion extends Question
       question = theQuestion;
       answer = questionAnswer;
     }
-    
 }
