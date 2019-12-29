@@ -4,7 +4,7 @@ public class TextQuestion extends Question
 	private String question;
 	private String answer;
 	
-	public Question(String questionType, String theQuestion, String questionAnswer)
+	public TextQuestion(String questionType, String theQuestion, String questionAnswer)
 	{
 		type = questionType;
 		question = theQuestion;
