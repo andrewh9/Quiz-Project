@@ -4,7 +4,7 @@ public class MMCQuestion extends Question
     private String question;
     private String answer;
 
-    public NumberQuestion(String questionType, String theQuestion, String questionAnswer)
+    public MMCQuestion(String questionType, String theQuestion, String questionAnswer)
     {
       type = questionType;
       question = theQuestion;
