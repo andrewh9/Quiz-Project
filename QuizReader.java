@@ -1,18 +1,73 @@
 import java.util.Scanner;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
 
 public class Quiz
 {
-	public abstract void main(String[] args)
+	public String[] questions = new String[4];
+	public String[] answers = new String[4];
+	
+	public abstract void main(String[] args) throws FileNotFoundException
 	{
-   		FileReader file = new FileReader("quiz.txt");
+		FileReader file = new FileReader("quiz.txt");
 		Scanner s = new Scanner (file);
 		
-		String type = s.next();
-	
-		if(type.equals("T"))
+		for(int i = 0; i < 4; i++)
 		{
-			String question = s.nextLine();
-			String answer = s.nextLine();
+			String type = s.next();
+	
+			if(type.equals("T"))
+			{
+				questions[0] = s.nextLine();
+				answers[0] = s.nextLine();
+			}
+			
+			else if(type.equals("S"))
+			{
+				questions[1] = s.nextLine();
+				
+				for(int j = 0; j < 100; j++)
+				{
+					String correctness = s.next();
+				
+					String choice = s.next();
+				
+					if(correctness.equals("+")
+				  		answers[1] = choice;
+					else if(! correctness.equals("-") && ! correctness.equals("+"))
+					    break;
+				}
+			}
+					   
+			else if(type.equals("M")
+			{
+				questions[2] = s.nextLine();
+				
+				answers[2] = "";
+				
+				for(int k = 0; k < 100; k++)
+				{
+					String correctness1 = s.next();
+						
+					String choice1 = s.next();
+					
+					if(corrrectness1.equals("+")
+					   answers[2] += choice1 + " ";
+					else if(! correctness1.equals("-") && ! correctness1.equals("+"))
+					   break;
+				}
+				
+			}
+					   
+			else if(type.equals("N")
+			{
+				questions[3] = s.nextLine();
+				
+				Double number = (int)(s.nextDouble() * 10 + 0.5) / 10.0;
+				
+				answers[3] = number.toString();
+			}
 		}
+		
 	}
 }
