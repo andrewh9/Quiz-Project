@@ -7,8 +7,8 @@ public class Quiz
 {
 	public String[] questions = new String[4];
 	public String[] answers = new String[4];
-	ArrayList<String> choicesSMC = new ArrayList;
-	ArrayList<String> choicesMMC = new ArrayList;
+	ArrayList<String> choicesSMC = new ArrayList<String>();
+	ArrayList<String> choicesMMC = new ArrayList<String>();
 	
 	public abstract void main(String[] args) throws FileNotFoundException
 	{
