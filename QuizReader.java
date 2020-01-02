@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Quiz
 {
-	public String[] questions = new String[4];
-	public String[] answers = new String[4];
+	String[] questions = new String[4];
+	String[] answers = new String[4];
 	ArrayList<String> choicesSMC = new ArrayList<String>();
 	ArrayList<String> choicesMMC = new ArrayList<String>();
 	
