@@ -51,7 +51,7 @@ public class Quiz
 						
 					String choice1 = s.next();
 					
-					if(corrrectness1.equals("+")
+					if(correctness1.equals("+")
 					   answers[2] += choice1 + " ";
 					else if(! correctness1.equals("-") && ! correctness1.equals("+"))
 					   break;
