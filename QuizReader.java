@@ -6,6 +6,8 @@ public class Quiz
 {
 	public String[] questions = new String[4];
 	public String[] answers = new String[4];
+	ArrayList<String> choicesSMC = new ArrayList;
+	ArrayList<String> choicesMMC = new ArrayList;
 	
 	public abstract void main(String[] args) throws FileNotFoundException
 	{
@@ -34,6 +36,8 @@ public class Quiz
 				
 					if(correctness.equals("+")
 				  		answers[1] = choice;
+					if(correctness.equals("+") || correctness.equals("-"))
+						choicesSMC.add(choice);
 					else if(! correctness.equals("-") && ! correctness.equals("+"))
 					    break;
 				}
@@ -53,6 +57,8 @@ public class Quiz
 					
 					if(correctness1.equals("+")
 					   answers[2] += choice1 + " ";
+					if(correctness1.equals("+") || correctness1.equals("-"))
+						choicesMMC.add(choice1);
 					else if(! correctness1.equals("-") && ! correctness1.equals("+"))
 					   break;
 				}
