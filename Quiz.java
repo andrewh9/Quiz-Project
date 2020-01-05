@@ -39,7 +39,8 @@ public class Quiz extends QuizReader
 		Double numberResponse = s.nextDouble();
 		responses[3] = numberResponse.toString();
 		
-			System.out.println("Your Quiz Results");
+		
+		System.out.println("Your Quiz Results");
 	
 		System.out.println("Text Question: " + text.gradeResponse(responses[0]));
 	
