@@ -6,9 +6,7 @@ public class NumberQuestion extends Question
 
     public NumberQuestion(String questionType, String theQuestion, String questionAnswer)
     {
-      type = questionType;
-      question = theQuestion;
-      answer = questionAnswer;
+      	super(questionType, theQuestion, questionAnswer);
     }
     
     public String getType()
