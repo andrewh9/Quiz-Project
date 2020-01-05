@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class Quiz
+public class QuizReader
 {
 	String[] questions = new String[4];
 	String[] answers = new String[4];
