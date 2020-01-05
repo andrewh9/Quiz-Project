@@ -1,8 +1,8 @@
 public abstract class Question
 {
-	public String type;
-	public String question;
-	public String answer;	
+    public String type;
+    public String question;
+    public String answer;	
 	
     public Question(String questionType, String theQuestion, String questionAnswer)
     {
