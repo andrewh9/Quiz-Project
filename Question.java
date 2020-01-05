@@ -1,4 +1,4 @@
-public abstact class Question
+public abstract class Question
 {
     public Question(String questionType, String theQuestion, String questionAnswer){};
     
