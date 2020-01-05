@@ -6,9 +6,7 @@ public class SMCQuestion extends Question
 
     public SMCQuestion(String questionType, String theQuestion, String questionAnswers)
     {
-        type = questionType;
-        question = theQuestion;
-        answers = questionAnswer;
+        super(questionType, theQuestion, questionAnswer);
     }
 
     public String getType()
