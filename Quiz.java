@@ -38,5 +38,15 @@ public class Quiz extends QuizReader
 		System.out.println(number.getQuestion());
 		Double numberResponse = s.nextDouble();
 		responses[3] = numberResponse.toString();
+		
+			System.out.println("Your Quiz Results");
+	
+		System.out.println("Text Question: " + text.gradeResponse(responses[0]));
+	
+		System.out.println("Single Choice Question: " + SMC.gradeResponse(responses[1]));
+	
+		System.out.println("Multiple Choice Question: " + MMC.gradeResponse(responses[2]));
+
+		System.out.println("Number Question: " + number.gradeResponse(responses[3]));
 	}
 }
