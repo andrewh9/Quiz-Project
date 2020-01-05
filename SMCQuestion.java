@@ -25,4 +25,12 @@ public class SMCQuestion extends Question
     {
        return answer;
     }
+    
+    public boolean gradeResponse(String response)
+    {
+        if(response.equals(answer))
+            return true;
+        else
+            return false;
+    }
 }
