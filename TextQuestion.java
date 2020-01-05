@@ -6,9 +6,7 @@ public class TextQuestion extends Question
 	
 	public TextQuestion(String questionType, String theQuestion, String questionAnswer)
 	{
-		type = questionType;
-		question = theQuestion;
-		answer = questionAnswer;
+		super(questionType, theQuestion, questionAnswer);
 	}
 	
 	public String getType()
@@ -17,7 +15,7 @@ public class TextQuestion extends Question
     }
     
     public String getQuestion()
-    {
+	{
       	return question;
     }
     
@@ -26,11 +24,11 @@ public class TextQuestion extends Question
       	return answer;
     }
 	
-    public String gradeResponse(String response)
-    {
-        if(response.equals(answer))
-            return "Correct";
-        else
-            return "Incorrect";
+   	 public String gradeResponse(String response)
+   	 {
+     	if(response.equals(answer))
+       		return "Correct";
+      	else
+         	return "Incorrect";
     }
 }
