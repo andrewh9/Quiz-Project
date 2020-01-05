@@ -6,10 +6,8 @@ public abstract class Question
 	
     public Question(String questionType, String theQuestion, String questionAnswer)
     {
-    	type = questionType;
-    	question = theQuestion;
-    	answer = questionAnswer;
-    };
+    	super(questionType, theQuestion, questionAnswer);
+    }
     
     public abstract String getType();
     
