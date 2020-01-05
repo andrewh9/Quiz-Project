@@ -8,5 +8,5 @@ public abstract class Question
     
     public abstract String getAnswer();
     
-    public String gradeResponse(String response)();
+    public abstract String gradeResponse(String response)();
 }
