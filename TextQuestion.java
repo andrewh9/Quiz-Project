@@ -24,8 +24,8 @@ public class TextQuestion extends Question
       	return answer;
     }
 	
-   	 public String gradeResponse(String response)
-   	 {
+  	public String gradeResponse(String response)
+   	{
      	if(response.equals(answer))
        		return "Correct";
       	else
