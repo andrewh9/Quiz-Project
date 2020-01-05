@@ -5,13 +5,15 @@ import java.util.ArrayList;
 
 public class QuizReader
 {
+
 	String[] questions = new String[4];
 	String[] answers = new String[4];
 	ArrayList<String> choicesSMC = new ArrayList<String>();
 	ArrayList<String> choicesMMC = new ArrayList<String>();
 	
-	public static void main(String[] args) throws FileNotFoundException
+	public void read() throws FileNotFoundException
 	{
+		
 		FileReader file = new FileReader("quiz.txt");
 		Scanner s = new Scanner (file);
 		
@@ -35,7 +37,7 @@ public class QuizReader
 				
 					String choice = s.next();
 				
-					if(correctness.equals("+")
+					if(correctness.equals("+"))
 				  		answers[1] = choice;
 					if(correctness.equals("+") || correctness.equals("-"))
 						choicesSMC.add(choice);
@@ -44,7 +46,7 @@ public class QuizReader
 				}
 			}
 					   
-			else if(type.equals("M")
+			else if(type.equals("M"))
 			{
 				questions[2] = s.nextLine();
 				
@@ -56,7 +58,7 @@ public class QuizReader
 						
 					String choice1 = s.next();
 					
-					if(correctness1.equals("+")
+					if(correctness1.equals("+"))
 					   answers[2] += choice1 + " ";
 					if(correctness1.equals("+") || correctness1.equals("-"))
 						choicesMMC.add(choice1);
@@ -66,7 +68,7 @@ public class QuizReader
 				
 			}
 					   
-			else if(type.equals("N")
+			else if(type.equals("N"))
 			{
 				questions[3] = s.nextLine();
 				
