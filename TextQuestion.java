@@ -12,25 +12,25 @@ public class TextQuestion extends Question
 	}
 	
 	public String getType()
-    	{
-      		return type;
-    	}
+    {
+      	return type;
+    }
     
-    	public String getQuestion()
-    	{
-      		return question;
-    	}
+    public String getQuestion()
+    {
+      	return question;
+    }
     
-    	public String getAnswer()
-    	{
-      		return answer;
-    	}
+    public String getAnswer()
+    {
+      	return answer;
+    }
 	
-	public boolean gradeResponse(String response)
-  	{
-        	if(response.equals(answer))
-        	   return true;
-       		else
-         	   return false;
-    	}
+    public String gradeResponse(String response)
+    {
+        if(response.equals(answer))
+            return "Correct";
+        else
+            return "Incorrect";
+    }
 }
