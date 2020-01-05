@@ -5,7 +5,7 @@ public class Quiz extends QuizReader
 {
 	String[] responses = new String[4];
 
-	public abstract void main(String[] args)
+	public static void main(String[] args)
 	{
 		TextQuestion text = new TextQuestion("T", questions[0], answers[0]);
 		SMCQuestion SMC = new SMCQuestion("S", questions[1], answers[1]);
