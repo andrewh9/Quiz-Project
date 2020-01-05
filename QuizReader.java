@@ -10,7 +10,7 @@ public class Quiz
 	ArrayList<String> choicesSMC = new ArrayList<String>();
 	ArrayList<String> choicesMMC = new ArrayList<String>();
 	
-	public abstract void main(String[] args) throws FileNotFoundException
+	public static void main(String[] args) throws FileNotFoundException
 	{
 		FileReader file = new FileReader("quiz.txt");
 		Scanner s = new Scanner (file);
