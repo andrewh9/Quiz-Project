@@ -7,4 +7,6 @@ public abstact class Question
     public abstract String getQuestion();
     
     public abstract String getAnswer();
+    
+    public abstract boolean gradeResponse(String response)();
 }
